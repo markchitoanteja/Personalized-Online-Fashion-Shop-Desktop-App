@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System.Collections.Generic;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Personalized_Online_Fashion_Shop_Desktop_App
@@ -9,6 +10,8 @@ namespace Personalized_Online_Fashion_Shop_Desktop_App
         private bool is_logout = false;
         private bool is_sidebar_collapsed = false;
         private string selected_sidebar_button;
+
+        Database database = new Database();
 
         public Main()
         {
@@ -27,13 +30,44 @@ namespace Personalized_Online_Fashion_Shop_Desktop_App
                 control.BackColor = Color.FromArgb(13, 110, 253);
             }
         }
-        
+
         private void mouse_leave(Control control)
         {
             if (selected_sidebar_button != control.Name)
             {
                 control.BackColor = Color.Transparent;
             }
+        }
+
+        private void mouse_click(Control control)
+        {
+            reset_sidebar_buttons();
+
+            control.BackColor = Color.FromArgb(13, 110, 253);
+            selected_sidebar_button = control.Name;
+
+            switch (selected_sidebar_button)
+            {
+                case "btn_dashboard":
+                    User_Control_Dashboard.BringToFront();
+
+                    break;
+
+                case "btn_manage_orders":
+                    User_Control_Manage_Orders.BringToFront();
+
+                    break;
+
+                default:
+                    break;
+            }
+        }
+
+        private void reset_sidebar_buttons()
+        {
+            btn_dashboard.BackColor = Color.Transparent;
+            btn_manage_orders.BackColor = Color.Transparent;
+            btn_logout.BackColor = Color.Transparent;
         }
 
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
@@ -75,6 +109,8 @@ namespace Personalized_Online_Fashion_Shop_Desktop_App
 
         private void Main_Load(object sender, System.EventArgs e)
         {
+            lbl_user_name.Text = Session.Get("user_name");
+
             selected_sidebar_button = "btn_dashboard";
         }
 
@@ -131,11 +167,15 @@ namespace Personalized_Online_Fashion_Shop_Desktop_App
         private void btn_dashboard_Click(object sender, System.EventArgs e)
         {
             btn_temp.Focus();
+
+            mouse_click(btn_dashboard);
         }
 
         private void btn_manage_orders_Click(object sender, System.EventArgs e)
         {
             btn_temp.Focus();
+
+            mouse_click(btn_manage_orders);
         }
     }
 }

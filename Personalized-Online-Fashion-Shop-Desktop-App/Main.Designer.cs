@@ -30,36 +30,38 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.sidebar = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.btn_toogle_menu = new System.Windows.Forms.PictureBox();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.btn_dashboard = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_manage_orders = new System.Windows.Forms.Button();
-            this.panel9 = new System.Windows.Forms.Panel();
+            this.btn_temp = new System.Windows.Forms.Button();
             this.btn_logout = new System.Windows.Forms.Button();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.btn_manage_orders = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_dashboard = new System.Windows.Forms.Button();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.lbl_user_name = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.header = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btn_toogle_menu = new System.Windows.Forms.PictureBox();
+            this.footer = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.btn_temp = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.User_Control_Dashboard = new Personalized_Online_Fashion_Shop_Desktop_App.UC_Dashboard();
+            this.User_Control_Manage_Orders = new Personalized_Online_Fashion_Shop_Desktop_App.UC_Manage_Orders();
             this.sidebar.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_toogle_menu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_toogle_menu)).BeginInit();
+            this.footer.SuspendLayout();
             this.SuspendLayout();
             // 
             // sidebar
@@ -80,87 +82,72 @@
             this.sidebar.Size = new System.Drawing.Size(250, 561);
             this.sidebar.TabIndex = 0;
             // 
-            // panel2
+            // btn_temp
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Controls.Add(this.btn_toogle_menu);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(250, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(758, 60);
-            this.panel2.TabIndex = 1;
+            this.btn_temp.Location = new System.Drawing.Point(-104, 346);
+            this.btn_temp.Name = "btn_temp";
+            this.btn_temp.Size = new System.Drawing.Size(75, 23);
+            this.btn_temp.TabIndex = 8;
+            this.btn_temp.Text = "button1";
+            this.btn_temp.UseVisualStyleBackColor = true;
             // 
-            // panel3
+            // btn_logout
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(250, 501);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(758, 60);
-            this.panel3.TabIndex = 2;
+            this.btn_logout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_logout.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_logout.FlatAppearance.BorderSize = 0;
+            this.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_logout.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_logout.ForeColor = System.Drawing.Color.White;
+            this.btn_logout.Image = ((System.Drawing.Image)(resources.GetObject("btn_logout.Image")));
+            this.btn_logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_logout.Location = new System.Drawing.Point(0, 240);
+            this.btn_logout.Name = "btn_logout";
+            this.btn_logout.Size = new System.Drawing.Size(250, 50);
+            this.btn_logout.TabIndex = 7;
+            this.btn_logout.Text = "          Logout";
+            this.btn_logout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_logout.UseVisualStyleBackColor = true;
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
+            this.btn_logout.MouseEnter += new System.EventHandler(this.btn_logout_MouseEnter);
+            this.btn_logout.MouseLeave += new System.EventHandler(this.btn_logout_MouseLeave);
             // 
-            // panel4
+            // panel9
             // 
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Controls.Add(this.pictureBox2);
-            this.panel4.Controls.Add(this.panel6);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(250, 60);
-            this.panel4.TabIndex = 0;
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel9.Location = new System.Drawing.Point(0, 235);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(250, 5);
+            this.panel9.TabIndex = 6;
             // 
-            // panel5
+            // btn_manage_orders
             // 
-            this.panel5.Controls.Add(this.label1);
-            this.panel5.Controls.Add(this.pictureBox1);
-            this.panel5.Controls.Add(this.panel7);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 60);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(250, 60);
-            this.panel5.TabIndex = 1;
+            this.btn_manage_orders.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_manage_orders.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_manage_orders.FlatAppearance.BorderSize = 0;
+            this.btn_manage_orders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_manage_orders.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_manage_orders.ForeColor = System.Drawing.Color.White;
+            this.btn_manage_orders.Image = ((System.Drawing.Image)(resources.GetObject("btn_manage_orders.Image")));
+            this.btn_manage_orders.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_manage_orders.Location = new System.Drawing.Point(0, 185);
+            this.btn_manage_orders.Name = "btn_manage_orders";
+            this.btn_manage_orders.Size = new System.Drawing.Size(250, 50);
+            this.btn_manage_orders.TabIndex = 5;
+            this.btn_manage_orders.Text = "          Manage Orders";
+            this.btn_manage_orders.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_manage_orders.UseVisualStyleBackColor = true;
+            this.btn_manage_orders.Click += new System.EventHandler(this.btn_manage_orders_Click);
+            this.btn_manage_orders.MouseEnter += new System.EventHandler(this.btn_manage_orders_MouseEnter);
+            this.btn_manage_orders.MouseLeave += new System.EventHandler(this.btn_manage_orders_MouseLeave);
             // 
-            // panel6
+            // panel1
             // 
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel6.Location = new System.Drawing.Point(0, 59);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(250, 1);
-            this.panel6.TabIndex = 0;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel7.Location = new System.Drawing.Point(0, 59);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(250, 1);
-            this.panel7.TabIndex = 0;
-            // 
-            // btn_toogle_menu
-            // 
-            this.btn_toogle_menu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_toogle_menu.Image = ((System.Drawing.Image)(resources.GetObject("btn_toogle_menu.Image")));
-            this.btn_toogle_menu.Location = new System.Drawing.Point(16, 20);
-            this.btn_toogle_menu.Name = "btn_toogle_menu";
-            this.btn_toogle_menu.Size = new System.Drawing.Size(20, 20);
-            this.btn_toogle_menu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_toogle_menu.TabIndex = 0;
-            this.btn_toogle_menu.TabStop = false;
-            this.btn_toogle_menu.Click += new System.EventHandler(this.btn_toogle_menu_Click);
-            // 
-            // panel8
-            // 
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 120);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(250, 10);
-            this.panel8.TabIndex = 2;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 180);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(250, 5);
+            this.panel1.TabIndex = 4;
             // 
             // btn_dashboard
             // 
@@ -184,63 +171,35 @@
             this.btn_dashboard.MouseEnter += new System.EventHandler(this.btn_dashboard_MouseEnter);
             this.btn_dashboard.MouseLeave += new System.EventHandler(this.btn_dashboard_MouseLeave);
             // 
-            // panel1
+            // panel8
             // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 180);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(250, 5);
-            this.panel1.TabIndex = 4;
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel8.Location = new System.Drawing.Point(0, 120);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(250, 10);
+            this.panel8.TabIndex = 2;
             // 
-            // btn_manage_orders
+            // panel5
             // 
-            this.btn_manage_orders.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_manage_orders.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_manage_orders.FlatAppearance.BorderSize = 0;
-            this.btn_manage_orders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_manage_orders.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_manage_orders.ForeColor = System.Drawing.Color.White;
-            this.btn_manage_orders.Image = ((System.Drawing.Image)(resources.GetObject("btn_manage_orders.Image")));
-            this.btn_manage_orders.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_manage_orders.Location = new System.Drawing.Point(0, 185);
-            this.btn_manage_orders.Name = "btn_manage_orders";
-            this.btn_manage_orders.Size = new System.Drawing.Size(250, 50);
-            this.btn_manage_orders.TabIndex = 5;
-            this.btn_manage_orders.Text = "          Manage Orders";
-            this.btn_manage_orders.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_manage_orders.UseVisualStyleBackColor = true;
-            this.btn_manage_orders.Click += new System.EventHandler(this.btn_manage_orders_Click);
-            this.btn_manage_orders.MouseEnter += new System.EventHandler(this.btn_manage_orders_MouseEnter);
-            this.btn_manage_orders.MouseLeave += new System.EventHandler(this.btn_manage_orders_MouseLeave);
+            this.panel5.Controls.Add(this.lbl_user_name);
+            this.panel5.Controls.Add(this.pictureBox1);
+            this.panel5.Controls.Add(this.panel7);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 60);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(250, 60);
+            this.panel5.TabIndex = 1;
             // 
-            // panel9
+            // lbl_user_name
             // 
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(0, 235);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(250, 5);
-            this.panel9.TabIndex = 6;
-            // 
-            // btn_logout
-            // 
-            this.btn_logout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_logout.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_logout.FlatAppearance.BorderSize = 0;
-            this.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_logout.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_logout.ForeColor = System.Drawing.Color.White;
-            this.btn_logout.Image = ((System.Drawing.Image)(resources.GetObject("btn_logout.Image")));
-            this.btn_logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_logout.Location = new System.Drawing.Point(0, 240);
-            this.btn_logout.Name = "btn_logout";
-            this.btn_logout.Size = new System.Drawing.Size(250, 50);
-            this.btn_logout.TabIndex = 7;
-            this.btn_logout.Text = "          Logout";
-            this.btn_logout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_logout.UseVisualStyleBackColor = true;
-            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
-            this.btn_logout.MouseEnter += new System.EventHandler(this.btn_logout_MouseEnter);
-            this.btn_logout.MouseLeave += new System.EventHandler(this.btn_logout_MouseLeave);
+            this.lbl_user_name.AutoSize = true;
+            this.lbl_user_name.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_user_name.ForeColor = System.Drawing.Color.White;
+            this.lbl_user_name.Location = new System.Drawing.Point(52, 21);
+            this.lbl_user_name.Name = "lbl_user_name";
+            this.lbl_user_name.Size = new System.Drawing.Size(149, 18);
+            this.lbl_user_name.TabIndex = 2;
+            this.lbl_user_name.Text = "Mark Chito Anteja";
             // 
             // pictureBox1
             // 
@@ -253,16 +212,25 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
+            // panel7
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(52, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 18);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Mark Chito Anteja";
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel7.Location = new System.Drawing.Point(0, 59);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(250, 1);
+            this.panel7.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Controls.Add(this.pictureBox2);
+            this.panel4.Controls.Add(this.panel6);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(250, 60);
+            this.panel4.TabIndex = 0;
             // 
             // label2
             // 
@@ -286,6 +254,26 @@
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel6.Location = new System.Drawing.Point(0, 59);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(250, 1);
+            this.panel6.TabIndex = 0;
+            // 
+            // header
+            // 
+            this.header.BackColor = System.Drawing.Color.White;
+            this.header.Controls.Add(this.pictureBox3);
+            this.header.Controls.Add(this.btn_toogle_menu);
+            this.header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.header.Location = new System.Drawing.Point(250, 0);
+            this.header.Name = "header";
+            this.header.Size = new System.Drawing.Size(758, 60);
+            this.header.TabIndex = 1;
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -298,16 +286,28 @@
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
             // 
-            // label3
+            // btn_toogle_menu
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(13, 21);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(580, 18);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Copyright © 2024 Personalized Online Fashion Shop. All rights reserved.";
+            this.btn_toogle_menu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_toogle_menu.Image = ((System.Drawing.Image)(resources.GetObject("btn_toogle_menu.Image")));
+            this.btn_toogle_menu.Location = new System.Drawing.Point(16, 20);
+            this.btn_toogle_menu.Name = "btn_toogle_menu";
+            this.btn_toogle_menu.Size = new System.Drawing.Size(20, 20);
+            this.btn_toogle_menu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_toogle_menu.TabIndex = 0;
+            this.btn_toogle_menu.TabStop = false;
+            this.btn_toogle_menu.Click += new System.EventHandler(this.btn_toogle_menu_Click);
+            // 
+            // footer
+            // 
+            this.footer.BackColor = System.Drawing.Color.White;
+            this.footer.Controls.Add(this.label4);
+            this.footer.Controls.Add(this.label3);
+            this.footer.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.footer.Location = new System.Drawing.Point(250, 501);
+            this.footer.Name = "footer";
+            this.footer.Size = new System.Drawing.Size(758, 60);
+            this.footer.TabIndex = 2;
             // 
             // label4
             // 
@@ -321,14 +321,36 @@
             this.label4.TabIndex = 1;
             this.label4.Text = "Version 1.0.0";
             // 
-            // btn_temp
+            // label3
             // 
-            this.btn_temp.Location = new System.Drawing.Point(-104, 346);
-            this.btn_temp.Name = "btn_temp";
-            this.btn_temp.Size = new System.Drawing.Size(75, 23);
-            this.btn_temp.TabIndex = 8;
-            this.btn_temp.Text = "button1";
-            this.btn_temp.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Gray;
+            this.label3.Location = new System.Drawing.Point(13, 21);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(580, 18);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Copyright © 2024 Personalized Online Fashion Shop. All rights reserved.";
+            // 
+            // User_Control_Dashboard
+            // 
+            this.User_Control_Dashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.User_Control_Dashboard.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.User_Control_Dashboard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.User_Control_Dashboard.Location = new System.Drawing.Point(250, 60);
+            this.User_Control_Dashboard.Name = "User_Control_Dashboard";
+            this.User_Control_Dashboard.Size = new System.Drawing.Size(758, 441);
+            this.User_Control_Dashboard.TabIndex = 3;
+            // 
+            // User_Control_Manage_Orders
+            // 
+            this.User_Control_Manage_Orders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.User_Control_Manage_Orders.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.User_Control_Manage_Orders.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.User_Control_Manage_Orders.Location = new System.Drawing.Point(0, 0);
+            this.User_Control_Manage_Orders.Name = "User_Control_Manage_Orders";
+            this.User_Control_Manage_Orders.Size = new System.Drawing.Size(1008, 561);
+            this.User_Control_Manage_Orders.TabIndex = 4;
             // 
             // Main
             // 
@@ -336,9 +358,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.ClientSize = new System.Drawing.Size(1008, 561);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.User_Control_Dashboard);
+            this.Controls.Add(this.footer);
+            this.Controls.Add(this.header);
             this.Controls.Add(this.sidebar);
+            this.Controls.Add(this.User_Control_Manage_Orders);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main";
@@ -348,17 +372,17 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
             this.Load += new System.EventHandler(this.Main_Load);
             this.sidebar.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_toogle_menu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.header.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_toogle_menu)).EndInit();
+            this.footer.ResumeLayout(false);
+            this.footer.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -366,8 +390,8 @@
         #endregion
 
         private System.Windows.Forms.Panel sidebar;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel header;
+        private System.Windows.Forms.Panel footer;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
@@ -380,12 +404,14 @@
         private System.Windows.Forms.Button btn_manage_orders;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_user_name;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btn_temp;
+        private UC_Dashboard User_Control_Dashboard;
+        private UC_Manage_Orders User_Control_Manage_Orders;
     }
 }

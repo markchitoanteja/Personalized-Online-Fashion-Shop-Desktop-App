@@ -44,3 +44,5 @@ C:\Users\00ant\Documents\Visual Studio 2022\Projects\Personalized-Online-Fashion
 C:\Users\00ant\Documents\Visual Studio 2022\Projects\Personalized-Online-Fashion-Shop-Desktop-App\Personalized-Online-Fashion-Shop-Desktop-App\obj\Debug\Personalized-Online-Fashion-Shop-Desktop-App.pdb
 C:\Users\00ant\Documents\Visual Studio 2022\Projects\Personalized-Online-Fashion-Shop-Desktop-App\Personalized-Online-Fashion-Shop-Desktop-App\obj\Debug\Personalized_Online_Fashion_Shop_Desktop_App.Login.resources
 C:\Users\00ant\Documents\Visual Studio 2022\Projects\Personalized-Online-Fashion-Shop-Desktop-App\Personalized-Online-Fashion-Shop-Desktop-App\obj\Debug\Personalized_Online_Fashion_Shop_Desktop_App.Main.resources
+C:\Users\00ant\Documents\Visual Studio 2022\Projects\Personalized-Online-Fashion-Shop-Desktop-App\Personalized-Online-Fashion-Shop-Desktop-App\obj\Debug\Personalized_Online_Fashion_Shop_Desktop_App.UC_Dashboard.resources
+C:\Users\00ant\Documents\Visual Studio 2022\Projects\Personalized-Online-Fashion-Shop-Desktop-App\Personalized-Online-Fashion-Shop-Desktop-App\obj\Debug\Personalized_Online_Fashion_Shop_Desktop_App.UC_Manage_Orders.resources

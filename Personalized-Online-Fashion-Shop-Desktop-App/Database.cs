@@ -16,36 +16,13 @@ namespace Personalized_Online_Fashion_Shop_Desktop_App
 
         private string Database_Connection()
         {
-            string connection_string = "server=localhost;user id=db_system_user;password=h$jNg}[%pnNp";
-            string db_connection_string = "";
+            string db_server = "prototype.personalizedonlinefashion.shop";
+            //string db_server = "localhost";
+            string db_user_id = "db_system_user";
+            string db_password = "h$jNg}[%pnNp";
+            string db_name = "db_system";
 
-            using (MySqlConnection conn = new MySqlConnection(connection_string))
-            {
-                try
-                {
-                    conn.Open();
-                    string db_name = "db_system";
-                    MySqlCommand cmd = new MySqlCommand($"SHOW DATABASES LIKE '{db_name}'", conn);
-
-                    object result = cmd.ExecuteScalar();
-                    if (result == null)
-                    {
-                        MySqlCommand query = new MySqlCommand($"CREATE DATABASE {db_name}", conn);
-
-                        query.ExecuteNonQuery();
-                    }
-
-                    db_connection_string = $"server=localhost;user id=root;database={db_name}";
-                }
-                catch (MySqlException err)
-                {
-                    MessageBox.Show("Error: " + err.Message, "MySQL Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                    Application.Exit();
-                }
-            }
-
-            return db_connection_string;
+            return $"server={db_server};user id={db_user_id};password={db_password};database=db_system;database={db_name}";
         }
 
         private void Create_Users_Table()
@@ -199,7 +176,7 @@ namespace Personalized_Online_Fashion_Shop_Desktop_App
             }
         }
 
-        public Dictionary<string, object> Select_One(string table_name, string column_name, object value)
+        public Dictionary<string, object> Select_One(string table_name, Dictionary<string, object> conditions, string logical_operator = "AND")
         {
             string database_connection = Database_Connection();
 
@@ -208,11 +185,21 @@ namespace Personalized_Online_Fashion_Shop_Desktop_App
             {
                 conn.Open();
 
-                string query = $"SELECT * FROM {table_name} WHERE {column_name} = @value LIMIT 1";
+                List<string> conditionClauses = new List<string>();
+                foreach (var condition in conditions)
+                {
+                    conditionClauses.Add($"{condition.Key} = @{condition.Key}");
+                }
+                string whereClause = string.Join($" {logical_operator} ", conditionClauses);
+
+                string query = $"SELECT * FROM {table_name} WHERE {whereClause} LIMIT 1";
 
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@value", value);
+                    foreach (var condition in conditions)
+                    {
+                        cmd.Parameters.AddWithValue($"@{condition.Key}", condition.Value);
+                    }
 
                     using (MySqlDataReader reader = cmd.ExecuteReader())
                     {

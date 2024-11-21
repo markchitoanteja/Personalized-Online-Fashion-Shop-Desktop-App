@@ -46,7 +46,6 @@
             this.main_form = new System.Windows.Forms.Panel();
             this.err_username = new System.Windows.Forms.ErrorProvider(this.components);
             this.err_password = new System.Windows.Forms.ErrorProvider(this.components);
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.loading.SuspendLayout();
@@ -213,11 +212,6 @@
             // 
             this.err_password.ContainerControl = this;
             // 
-            // timer1
-            // 
-            this.timer1.Interval = 500;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -265,7 +259,6 @@
         private System.Windows.Forms.Panel main_form;
         private System.Windows.Forms.ErrorProvider err_username;
         private System.Windows.Forms.ErrorProvider err_password;
-        private System.Windows.Forms.Timer timer1;
     }
 }
 
