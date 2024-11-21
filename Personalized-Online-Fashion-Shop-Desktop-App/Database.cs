@@ -16,8 +16,8 @@ namespace Personalized_Online_Fashion_Shop_Desktop_App
 
         private string Database_Connection()
         {
-            string db_server = "prototype.personalizedonlinefashion.shop";
-            //string db_server = "localhost";
+            //string db_server = "prototype.personalizedonlinefashion.shop";
+            string db_server = "localhost";
             string db_user_id = "db_system_user";
             string db_password = "h$jNg}[%pnNp";
             string db_name = "db_system";
@@ -102,7 +102,7 @@ namespace Personalized_Online_Fashion_Shop_Desktop_App
             }
         }
 
-        public bool Update(string table_name, Dictionary<string, object> data, string column, object value)
+        public bool Update(string table_name, Dictionary<string, object> data, Dictionary<string, object> conditions, string logical_operator = "AND")
         {
             try
             {
@@ -113,16 +113,21 @@ namespace Personalized_Online_Fashion_Shop_Desktop_App
 
                     var setClause = string.Join(", ", data.Keys.Select(key => $"{key} = @{key}"));
 
-                    string query = $"UPDATE {table_name} SET {setClause} WHERE {column} = @value";
+                    var conditionClause = string.Join($" {logical_operator} ", conditions.Keys.Select(key => $"{key} = @{key}_cond"));
+
+                    string query = $"UPDATE {table_name} SET {setClause} WHERE {conditionClause}";
 
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
                         foreach (var kvp in data)
                         {
-                            cmd.Parameters.AddWithValue("@" + kvp.Key, kvp.Value ?? DBNull.Value);
+                            cmd.Parameters.AddWithValue($"@{kvp.Key}", kvp.Value ?? DBNull.Value);
                         }
 
-                        cmd.Parameters.AddWithValue("@value", value);
+                        foreach (var kvp in conditions)
+                        {
+                            cmd.Parameters.AddWithValue($"@{kvp.Key}_cond", kvp.Value ?? DBNull.Value);
+                        }
 
                         cmd.ExecuteNonQuery();
                     }
@@ -290,6 +295,43 @@ namespace Personalized_Online_Fashion_Shop_Desktop_App
             }
 
             return results;
+        }
+
+        public List<Dictionary<string, object>> Query(string sql, Dictionary<string, object> parameters = null)
+        {
+            string database_connection = Database_Connection();
+
+            List<Dictionary<string, object>> result = new List<Dictionary<string, object>>();
+            using (MySqlConnection conn = new MySqlConnection(database_connection))
+            {
+                conn.Open();
+
+                using (MySqlCommand cmd = new MySqlCommand(sql, conn))
+                {
+                    if (parameters != null)
+                    {
+                        foreach (var param in parameters)
+                        {
+                            cmd.Parameters.AddWithValue($"@{param.Key}", param.Value);
+                        }
+                    }
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Dictionary<string, object> row = new Dictionary<string, object>();
+                            for (int i = 0; i < reader.FieldCount; i++)
+                            {
+                                row.Add(reader.GetName(i), reader.GetValue(i));
+                            }
+                            result.Add(row);
+                        }
+                    }
+                }
+            }
+
+            return result;
         }
     }
 }

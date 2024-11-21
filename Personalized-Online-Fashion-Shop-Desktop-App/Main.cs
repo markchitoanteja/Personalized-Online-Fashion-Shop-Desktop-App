@@ -9,13 +9,17 @@ namespace Personalized_Online_Fashion_Shop_Desktop_App
         private bool is_exiting = false;
         private bool is_logout = false;
         private bool is_sidebar_collapsed = false;
+        private bool is_dropdown_visible = false;
         private string selected_sidebar_button;
-
-        Database database = new Database();
 
         public Main()
         {
             InitializeComponent();
+        }
+
+        public void display_data()
+        {
+            lbl_user_name.Text = Session.Get("user_name");
         }
 
         private void mouse_enter(Control control)
@@ -109,7 +113,7 @@ namespace Personalized_Online_Fashion_Shop_Desktop_App
 
         private void Main_Load(object sender, System.EventArgs e)
         {
-            lbl_user_name.Text = Session.Get("user_name");
+            display_data();
 
             selected_sidebar_button = "btn_dashboard";
         }
@@ -148,6 +152,8 @@ namespace Personalized_Online_Fashion_Shop_Desktop_App
         {
             btn_temp.Focus();
 
+            hide_dropdown();
+
             DialogResult dialog_result = MessageBox.Show("Are you sure you want to log out?", "Logout Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (dialog_result == DialogResult.Yes)
@@ -168,6 +174,8 @@ namespace Personalized_Online_Fashion_Shop_Desktop_App
         {
             btn_temp.Focus();
 
+            hide_dropdown();
+
             mouse_click(btn_dashboard);
         }
 
@@ -175,7 +183,54 @@ namespace Personalized_Online_Fashion_Shop_Desktop_App
         {
             btn_temp.Focus();
 
+            hide_dropdown();
+
             mouse_click(btn_manage_orders);
+        }
+
+        private void btn_settings_Click(object sender, System.EventArgs e)
+        {
+            if (!is_dropdown_visible)
+            {
+                dropdown_settings.BringToFront();
+
+                dropdown_settings.Visible = true;
+
+                is_dropdown_visible = true;
+            }
+
+            else
+            {
+                hide_dropdown();
+            }
+        }
+
+        private void hide_dropdown()
+        {
+            dropdown_settings.Visible = false;
+
+            is_dropdown_visible = false;
+        }
+
+        private void btn_logout_2_Click(object sender, System.EventArgs e)
+        {
+            btn_temp.Focus();
+
+            hide_dropdown();
+
+            btn_logout.PerformClick();
+        }
+
+        private void btn_account_settings_Click(object sender, System.EventArgs e)
+        {
+            btn_temp.Focus();
+
+            hide_dropdown();
+
+            Account_Settings account_settings = new Account_Settings();
+
+            account_settings.Owner = this;
+            account_settings.ShowDialog();
         }
     }
 }

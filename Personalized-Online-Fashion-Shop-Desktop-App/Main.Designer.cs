@@ -46,11 +46,15 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.header = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btn_settings = new System.Windows.Forms.PictureBox();
             this.btn_toogle_menu = new System.Windows.Forms.PictureBox();
             this.footer = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.dropdown_settings = new System.Windows.Forms.Panel();
+            this.btn_logout_2 = new System.Windows.Forms.Button();
+            this.btn_developers = new System.Windows.Forms.Button();
+            this.btn_account_settings = new System.Windows.Forms.Button();
             this.User_Control_Dashboard = new Personalized_Online_Fashion_Shop_Desktop_App.UC_Dashboard();
             this.User_Control_Manage_Orders = new Personalized_Online_Fashion_Shop_Desktop_App.UC_Manage_Orders();
             this.sidebar.SuspendLayout();
@@ -59,9 +63,10 @@
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.header.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_settings)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_toogle_menu)).BeginInit();
             this.footer.SuspendLayout();
+            this.dropdown_settings.SuspendLayout();
             this.SuspendLayout();
             // 
             // sidebar
@@ -266,7 +271,7 @@
             // header
             // 
             this.header.BackColor = System.Drawing.Color.White;
-            this.header.Controls.Add(this.pictureBox3);
+            this.header.Controls.Add(this.btn_settings);
             this.header.Controls.Add(this.btn_toogle_menu);
             this.header.Dock = System.Windows.Forms.DockStyle.Top;
             this.header.Location = new System.Drawing.Point(250, 0);
@@ -274,17 +279,18 @@
             this.header.Size = new System.Drawing.Size(758, 60);
             this.header.TabIndex = 1;
             // 
-            // pictureBox3
+            // btn_settings
             // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(716, 20);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
+            this.btn_settings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_settings.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_settings.Image = ((System.Drawing.Image)(resources.GetObject("btn_settings.Image")));
+            this.btn_settings.Location = new System.Drawing.Point(716, 20);
+            this.btn_settings.Name = "btn_settings";
+            this.btn_settings.Size = new System.Drawing.Size(20, 20);
+            this.btn_settings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_settings.TabIndex = 1;
+            this.btn_settings.TabStop = false;
+            this.btn_settings.Click += new System.EventHandler(this.btn_settings_Click);
             // 
             // btn_toogle_menu
             // 
@@ -332,6 +338,64 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Copyright © 2024 Personalized Online Fashion Shop. All rights reserved.";
             // 
+            // dropdown_settings
+            // 
+            this.dropdown_settings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dropdown_settings.BackColor = System.Drawing.Color.White;
+            this.dropdown_settings.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.dropdown_settings.Controls.Add(this.btn_logout_2);
+            this.dropdown_settings.Controls.Add(this.btn_developers);
+            this.dropdown_settings.Controls.Add(this.btn_account_settings);
+            this.dropdown_settings.Location = new System.Drawing.Point(786, 46);
+            this.dropdown_settings.Name = "dropdown_settings";
+            this.dropdown_settings.Size = new System.Drawing.Size(200, 107);
+            this.dropdown_settings.TabIndex = 5;
+            this.dropdown_settings.Visible = false;
+            // 
+            // btn_logout_2
+            // 
+            this.btn_logout_2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_logout_2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_logout_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_logout_2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_logout_2.Location = new System.Drawing.Point(0, 70);
+            this.btn_logout_2.Name = "btn_logout_2";
+            this.btn_logout_2.Size = new System.Drawing.Size(198, 35);
+            this.btn_logout_2.TabIndex = 2;
+            this.btn_logout_2.Text = "Logout";
+            this.btn_logout_2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_logout_2.UseVisualStyleBackColor = true;
+            this.btn_logout_2.Click += new System.EventHandler(this.btn_logout_2_Click);
+            // 
+            // btn_developers
+            // 
+            this.btn_developers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_developers.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_developers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_developers.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_developers.Location = new System.Drawing.Point(0, 35);
+            this.btn_developers.Name = "btn_developers";
+            this.btn_developers.Size = new System.Drawing.Size(198, 35);
+            this.btn_developers.TabIndex = 1;
+            this.btn_developers.Text = "About";
+            this.btn_developers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_developers.UseVisualStyleBackColor = true;
+            // 
+            // btn_account_settings
+            // 
+            this.btn_account_settings.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_account_settings.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_account_settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_account_settings.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_account_settings.Location = new System.Drawing.Point(0, 0);
+            this.btn_account_settings.Name = "btn_account_settings";
+            this.btn_account_settings.Size = new System.Drawing.Size(198, 35);
+            this.btn_account_settings.TabIndex = 0;
+            this.btn_account_settings.Text = "Account Settings";
+            this.btn_account_settings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_account_settings.UseVisualStyleBackColor = true;
+            this.btn_account_settings.Click += new System.EventHandler(this.btn_account_settings_Click);
+            // 
             // User_Control_Dashboard
             // 
             this.User_Control_Dashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
@@ -358,6 +422,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.ClientSize = new System.Drawing.Size(1008, 561);
+            this.Controls.Add(this.dropdown_settings);
             this.Controls.Add(this.User_Control_Dashboard);
             this.Controls.Add(this.footer);
             this.Controls.Add(this.header);
@@ -379,10 +444,11 @@
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.header.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_settings)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_toogle_menu)).EndInit();
             this.footer.ResumeLayout(false);
             this.footer.PerformLayout();
+            this.dropdown_settings.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -407,11 +473,15 @@
         private System.Windows.Forms.Label lbl_user_name;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox btn_settings;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btn_temp;
         private UC_Dashboard User_Control_Dashboard;
         private UC_Manage_Orders User_Control_Manage_Orders;
+        private System.Windows.Forms.Panel dropdown_settings;
+        private System.Windows.Forms.Button btn_account_settings;
+        private System.Windows.Forms.Button btn_logout_2;
+        private System.Windows.Forms.Button btn_developers;
     }
 }

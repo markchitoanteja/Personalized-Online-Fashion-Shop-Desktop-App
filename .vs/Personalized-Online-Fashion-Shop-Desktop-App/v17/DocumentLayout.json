@@ -1,28 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\00ant\\Documents\\Visual Studio 2022\\Projects\\Personalized-Online-Fashion-Shop-Desktop-App\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{C02AA689-8A3B-4A4B-A0AD-39936613F68E}|Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App.csproj|C:\\Users\\00ant\\Documents\\Visual Studio 2022\\Projects\\Personalized-Online-Fashion-Shop-Desktop-App\\personalized-online-fashion-shop-desktop-app\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C02AA689-8A3B-4A4B-A0AD-39936613F68E}|Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App.csproj|solutionrelative:personalized-online-fashion-shop-desktop-app\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C02AA689-8A3B-4A4B-A0AD-39936613F68E}|Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App.csproj|c:\\users\\00ant\\documents\\visual studio 2022\\projects\\personalized-online-fashion-shop-desktop-app\\personalized-online-fashion-shop-desktop-app\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C02AA689-8A3B-4A4B-A0AD-39936613F68E}|Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App.csproj|solutionrelative:personalized-online-fashion-shop-desktop-app\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C02AA689-8A3B-4A4B-A0AD-39936613F68E}|Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App.csproj|c:\\users\\00ant\\documents\\visual studio 2022\\projects\\personalized-online-fashion-shop-desktop-app\\personalized-online-fashion-shop-desktop-app\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C02AA689-8A3B-4A4B-A0AD-39936613F68E}|Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App.csproj|solutionrelative:personalized-online-fashion-shop-desktop-app\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C02AA689-8A3B-4A4B-A0AD-39936613F68E}|Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App.csproj|c:\\users\\00ant\\documents\\visual studio 2022\\projects\\personalized-online-fashion-shop-desktop-app\\personalized-online-fashion-shop-desktop-app\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C02AA689-8A3B-4A4B-A0AD-39936613F68E}|Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App.csproj|solutionrelative:personalized-online-fashion-shop-desktop-app\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C02AA689-8A3B-4A4B-A0AD-39936613F68E}|Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App.csproj|c:\\users\\00ant\\documents\\visual studio 2022\\projects\\personalized-online-fashion-shop-desktop-app\\personalized-online-fashion-shop-desktop-app\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C02AA689-8A3B-4A4B-A0AD-39936613F68E}|Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App.csproj|solutionrelative:personalized-online-fashion-shop-desktop-app\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -30,74 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Database.cs",
-              "DocumentMoniker": "C:\\Users\\00ant\\Documents\\Visual Studio 2022\\Projects\\Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App\\Database.cs",
-              "RelativeDocumentMoniker": "Personalized-Online-Fashion-Shop-Desktop-App\\Database.cs",
-              "ToolTip": "C:\\Users\\00ant\\Documents\\Visual Studio 2022\\Projects\\Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App\\Database.cs",
-              "RelativeToolTip": "Personalized-Online-Fashion-Shop-Desktop-App\\Database.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T06:35:42.746Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\00ant\\Documents\\Visual Studio 2022\\Projects\\Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App\\Login.cs",
-              "RelativeDocumentMoniker": "Personalized-Online-Fashion-Shop-Desktop-App\\Login.cs",
-              "ToolTip": "C:\\Users\\00ant\\Documents\\Visual Studio 2022\\Projects\\Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App\\Login.cs",
-              "RelativeToolTip": "Personalized-Online-Fashion-Shop-Desktop-App\\Login.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAtwEsAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T06:26:07.836Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\00ant\\Documents\\Visual Studio 2022\\Projects\\Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App\\Login.cs",
-              "RelativeDocumentMoniker": "Personalized-Online-Fashion-Shop-Desktop-App\\Login.cs",
-              "ToolTip": "C:\\Users\\00ant\\Documents\\Visual Studio 2022\\Projects\\Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App\\Login.cs [Design]",
-              "RelativeToolTip": "Personalized-Online-Fashion-Shop-Desktop-App\\Login.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T06:26:06.311Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Main.cs",
-              "DocumentMoniker": "C:\\Users\\00ant\\Documents\\Visual Studio 2022\\Projects\\Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App\\Main.cs",
-              "RelativeDocumentMoniker": "Personalized-Online-Fashion-Shop-Desktop-App\\Main.cs",
-              "ToolTip": "C:\\Users\\00ant\\Documents\\Visual Studio 2022\\Projects\\Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App\\Main.cs",
-              "RelativeToolTip": "Personalized-Online-Fashion-Shop-Desktop-App\\Main.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAiwHMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T12:06:23.713Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Main.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\00ant\\Documents\\Visual Studio 2022\\Projects\\Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App\\Main.cs",
-              "RelativeDocumentMoniker": "Personalized-Online-Fashion-Shop-Desktop-App\\Main.cs",
-              "ToolTip": "C:\\Users\\00ant\\Documents\\Visual Studio 2022\\Projects\\Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App\\Main.cs [Design]",
-              "RelativeToolTip": "Personalized-Online-Fashion-Shop-Desktop-App\\Main.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T12:04:24.231Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }

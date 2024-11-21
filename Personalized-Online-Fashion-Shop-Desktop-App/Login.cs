@@ -74,6 +74,8 @@ namespace Personalized_Online_Fashion_Shop_Desktop_App
 
                             Session.Set("user_id", user_data["id"].ToString());
                             Session.Set("user_name", user_data["name"].ToString());
+                            Session.Set("user_username", user_data["username"].ToString());
+                            Session.Set("user_password", user_data["password"].ToString());
 
                             if (login_remember_me.Checked)
                             {
@@ -91,11 +93,11 @@ namespace Personalized_Online_Fashion_Shop_Desktop_App
 
                 if (response)
                 {
-                    this.Invoke((MethodInvoker)delegate
+                    Invoke((MethodInvoker)delegate
                     {
                         Hide();
 
-                        MessageBox.Show("Welcome back!", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Welcome back, " + Session.Get("user_name") + "!", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                         Main main = new Main();
                         main.Show();
@@ -134,7 +136,6 @@ namespace Personalized_Online_Fashion_Shop_Desktop_App
         {
             err_password.Dispose();
         }
-
 
         private void Login_Load(object sender, EventArgs e)
         {

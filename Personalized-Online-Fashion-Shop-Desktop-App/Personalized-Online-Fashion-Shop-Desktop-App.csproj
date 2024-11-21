@@ -107,6 +107,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account_Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account_Settings.Designer.cs">
+      <DependentUpon>Account_Settings.cs</DependentUpon>
+    </Compile>
     <Compile Include="Database.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -135,6 +141,9 @@
     <Compile Include="UC_Manage_Orders.Designer.cs">
       <DependentUpon>UC_Manage_Orders.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Account_Settings.resx">
+      <DependentUpon>Account_Settings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
