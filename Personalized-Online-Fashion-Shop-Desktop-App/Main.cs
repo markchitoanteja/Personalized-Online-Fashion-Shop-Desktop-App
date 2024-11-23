@@ -212,15 +212,6 @@ namespace Personalized_Online_Fashion_Shop_Desktop_App
             is_dropdown_visible = false;
         }
 
-        private void btn_logout_2_Click(object sender, System.EventArgs e)
-        {
-            btn_temp.Focus();
-
-            hide_dropdown();
-
-            btn_logout.PerformClick();
-        }
-
         private void btn_account_settings_Click(object sender, System.EventArgs e)
         {
             btn_temp.Focus();
@@ -231,6 +222,26 @@ namespace Personalized_Online_Fashion_Shop_Desktop_App
 
             account_settings.Owner = this;
             account_settings.ShowDialog();
+        }
+
+        private void btn_logout_2_Click(object sender, System.EventArgs e)
+        {
+            btn_temp.Focus();
+
+            hide_dropdown();
+
+            btn_logout.PerformClick();
+        }
+
+        private void btn_developers_Click(object sender, System.EventArgs e)
+        {
+            btn_temp.Focus();
+
+            hide_dropdown();
+
+            About about = new About();
+
+            about.ShowDialog();
         }
     }
 }

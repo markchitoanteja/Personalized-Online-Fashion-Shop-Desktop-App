@@ -2,14 +2,11 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Personalized_Online_Fashion_Shop_Desktop_App
 {
     public partial class Login : Form
     {
-        int counter;
-
         public Login()
         {
             InitializeComponent();
@@ -55,9 +52,9 @@ namespace Personalized_Online_Fashion_Shop_Desktop_App
                 Database database = new Database();
                 bool response = false;
 
-                var conditions = new Dictionary<string, object> 
-                { 
-                    { "username", login_username.Text } 
+                var conditions = new Dictionary<string, object>
+                {
+                    { "username", login_username.Text }
                 };
 
                 var user_data = database.Select_One("users", conditions);

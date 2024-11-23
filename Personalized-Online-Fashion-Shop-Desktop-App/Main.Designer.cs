@@ -53,7 +53,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.dropdown_settings = new System.Windows.Forms.Panel();
             this.btn_logout_2 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.btn_developers = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.btn_account_settings = new System.Windows.Forms.Button();
             this.User_Control_Dashboard = new Personalized_Online_Fashion_Shop_Desktop_App.UC_Dashboard();
             this.User_Control_Manage_Orders = new Personalized_Online_Fashion_Shop_Desktop_App.UC_Manage_Orders();
@@ -270,7 +272,7 @@
             // 
             // header
             // 
-            this.header.BackColor = System.Drawing.Color.White;
+            this.header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
             this.header.Controls.Add(this.btn_settings);
             this.header.Controls.Add(this.btn_toogle_menu);
             this.header.Dock = System.Windows.Forms.DockStyle.Top;
@@ -306,7 +308,7 @@
             // 
             // footer
             // 
-            this.footer.BackColor = System.Drawing.Color.White;
+            this.footer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
             this.footer.Controls.Add(this.label4);
             this.footer.Controls.Add(this.label3);
             this.footer.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -320,7 +322,7 @@
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Gray;
+            this.label4.ForeColor = System.Drawing.Color.DimGray;
             this.label4.Location = new System.Drawing.Point(633, 21);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(113, 18);
@@ -331,7 +333,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Gray;
+            this.label3.ForeColor = System.Drawing.Color.DimGray;
             this.label3.Location = new System.Drawing.Point(13, 21);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(580, 18);
@@ -344,11 +346,13 @@
             this.dropdown_settings.BackColor = System.Drawing.Color.White;
             this.dropdown_settings.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.dropdown_settings.Controls.Add(this.btn_logout_2);
+            this.dropdown_settings.Controls.Add(this.panel3);
             this.dropdown_settings.Controls.Add(this.btn_developers);
+            this.dropdown_settings.Controls.Add(this.panel2);
             this.dropdown_settings.Controls.Add(this.btn_account_settings);
             this.dropdown_settings.Location = new System.Drawing.Point(786, 46);
             this.dropdown_settings.Name = "dropdown_settings";
-            this.dropdown_settings.Size = new System.Drawing.Size(200, 107);
+            this.dropdown_settings.Size = new System.Drawing.Size(200, 109);
             this.dropdown_settings.TabIndex = 5;
             this.dropdown_settings.Visible = false;
             // 
@@ -356,35 +360,57 @@
             // 
             this.btn_logout_2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_logout_2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_logout_2.FlatAppearance.BorderSize = 0;
             this.btn_logout_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_logout_2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_logout_2.Location = new System.Drawing.Point(0, 70);
+            this.btn_logout_2.Location = new System.Drawing.Point(0, 72);
             this.btn_logout_2.Name = "btn_logout_2";
             this.btn_logout_2.Size = new System.Drawing.Size(198, 35);
-            this.btn_logout_2.TabIndex = 2;
+            this.btn_logout_2.TabIndex = 9;
             this.btn_logout_2.Text = "Logout";
             this.btn_logout_2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_logout_2.UseVisualStyleBackColor = true;
             this.btn_logout_2.Click += new System.EventHandler(this.btn_logout_2_Click);
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.LightGray;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 71);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(198, 1);
+            this.panel3.TabIndex = 8;
+            // 
             // btn_developers
             // 
             this.btn_developers.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_developers.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_developers.FlatAppearance.BorderSize = 0;
             this.btn_developers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_developers.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_developers.Location = new System.Drawing.Point(0, 35);
+            this.btn_developers.Location = new System.Drawing.Point(0, 36);
             this.btn_developers.Name = "btn_developers";
             this.btn_developers.Size = new System.Drawing.Size(198, 35);
-            this.btn_developers.TabIndex = 1;
+            this.btn_developers.TabIndex = 7;
             this.btn_developers.Text = "About";
             this.btn_developers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_developers.UseVisualStyleBackColor = true;
+            this.btn_developers.Click += new System.EventHandler(this.btn_developers_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.LightGray;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 35);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(198, 1);
+            this.panel2.TabIndex = 6;
             // 
             // btn_account_settings
             // 
             this.btn_account_settings.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_account_settings.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_account_settings.FlatAppearance.BorderSize = 0;
             this.btn_account_settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_account_settings.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_account_settings.Location = new System.Drawing.Point(0, 0);
@@ -398,7 +424,7 @@
             // 
             // User_Control_Dashboard
             // 
-            this.User_Control_Dashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.User_Control_Dashboard.BackColor = System.Drawing.SystemColors.Control;
             this.User_Control_Dashboard.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.User_Control_Dashboard.Dock = System.Windows.Forms.DockStyle.Fill;
             this.User_Control_Dashboard.Location = new System.Drawing.Point(250, 60);
@@ -428,8 +454,8 @@
             this.Controls.Add(this.header);
             this.Controls.Add(this.sidebar);
             this.Controls.Add(this.User_Control_Manage_Orders);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(1024, 600);
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Personalized Online Fashion Shop";
@@ -482,6 +508,8 @@
         private System.Windows.Forms.Panel dropdown_settings;
         private System.Windows.Forms.Button btn_account_settings;
         private System.Windows.Forms.Button btn_logout_2;
+        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btn_developers;
+        private System.Windows.Forms.Panel panel2;
     }
 }
