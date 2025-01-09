@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\00ant\\Documents\\Visual Studio 2022\\Projects\\Personalized-Online-Fashion-Shop-Desktop-App\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C02AA689-8A3B-4A4B-A0AD-39936613F68E}|Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App.csproj|c:\\users\\00ant\\documents\\visual studio 2022\\projects\\personalized-online-fashion-shop-desktop-app\\personalized-online-fashion-shop-desktop-app\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C02AA689-8A3B-4A4B-A0AD-39936613F68E}|Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App.csproj|solutionrelative:personalized-online-fashion-shop-desktop-app\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C02AA689-8A3B-4A4B-A0AD-39936613F68E}|Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App.csproj|c:\\users\\00ant\\documents\\visual studio 2022\\projects\\personalized-online-fashion-shop-desktop-app\\personalized-online-fashion-shop-desktop-app\\illink\\update_status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C02AA689-8A3B-4A4B-A0AD-39936613F68E}|Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App.csproj|solutionrelative:personalized-online-fashion-shop-desktop-app\\illink\\update_status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C02AA689-8A3B-4A4B-A0AD-39936613F68E}|Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App.csproj|c:\\users\\00ant\\documents\\visual studio 2022\\projects\\personalized-online-fashion-shop-desktop-app\\personalized-online-fashion-shop-desktop-app\\uc_manage_orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C02AA689-8A3B-4A4B-A0AD-39936613F68E}|Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App.csproj|solutionrelative:personalized-online-fashion-shop-desktop-app\\uc_manage_orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C02AA689-8A3B-4A4B-A0AD-39936613F68E}|Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App.csproj|C:\\Users\\00ant\\Documents\\Visual Studio 2022\\Projects\\Personalized-Online-Fashion-Shop-Desktop-App\\personalized-online-fashion-shop-desktop-app\\uc_manage_orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C02AA689-8A3B-4A4B-A0AD-39936613F68E}|Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App.csproj|solutionrelative:personalized-online-fashion-shop-desktop-app\\uc_manage_orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +26,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Update_Status.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\00ant\\Documents\\Visual Studio 2022\\Projects\\Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App\\ILLink\\Update_Status.cs",
+              "RelativeDocumentMoniker": "Personalized-Online-Fashion-Shop-Desktop-App\\ILLink\\Update_Status.cs",
+              "ToolTip": "C:\\Users\\00ant\\Documents\\Visual Studio 2022\\Projects\\Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App\\ILLink\\Update_Status.cs [Design]",
+              "RelativeToolTip": "Personalized-Online-Fashion-Shop-Desktop-App\\ILLink\\Update_Status.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T18:22:40.591Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Database.cs",
+              "DocumentMoniker": "C:\\Users\\00ant\\Documents\\Visual Studio 2022\\Projects\\Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App\\Database.cs",
+              "RelativeDocumentMoniker": "Personalized-Online-Fashion-Shop-Desktop-App\\Database.cs",
+              "ToolTip": "C:\\Users\\00ant\\Documents\\Visual Studio 2022\\Projects\\Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App\\Database.cs",
+              "RelativeToolTip": "Personalized-Online-Fashion-Shop-Desktop-App\\Database.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T18:05:17.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UC_Manage_Orders.cs",
+              "DocumentMoniker": "C:\\Users\\00ant\\Documents\\Visual Studio 2022\\Projects\\Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App\\UC_Manage_Orders.cs",
+              "RelativeDocumentMoniker": "Personalized-Online-Fashion-Shop-Desktop-App\\UC_Manage_Orders.cs",
+              "ToolTip": "C:\\Users\\00ant\\Documents\\Visual Studio 2022\\Projects\\Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App\\UC_Manage_Orders.cs",
+              "RelativeToolTip": "Personalized-Online-Fashion-Shop-Desktop-App\\UC_Manage_Orders.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T15:56:09.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UC_Manage_Orders.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\00ant\\Documents\\Visual Studio 2022\\Projects\\Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App\\UC_Manage_Orders.cs",
+              "RelativeDocumentMoniker": "Personalized-Online-Fashion-Shop-Desktop-App\\UC_Manage_Orders.cs",
+              "ToolTip": "C:\\Users\\00ant\\Documents\\Visual Studio 2022\\Projects\\Personalized-Online-Fashion-Shop-Desktop-App\\Personalized-Online-Fashion-Shop-Desktop-App\\UC_Manage_Orders.cs [Design]",
+              "RelativeToolTip": "Personalized-Online-Fashion-Shop-Desktop-App\\UC_Manage_Orders.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T15:56:05.477Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

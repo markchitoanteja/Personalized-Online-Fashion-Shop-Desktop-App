@@ -63,9 +63,10 @@ namespace Personalized_Online_Fashion_Shop_Desktop_App
                 {
                     if (login_username.Text == user_data["username"].ToString())
                     {
+                        string user_type = user_data["user_type"].ToString();
                         string hash = user_data["password"].ToString();
 
-                        if (password_verify(login_password.Text, hash))
+                        if (password_verify(login_password.Text, hash) && user_type == "admin")
                         {
                             response = true;
 

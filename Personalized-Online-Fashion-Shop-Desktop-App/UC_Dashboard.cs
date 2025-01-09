@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Personalized_Online_Fashion_Shop_Desktop_App
@@ -50,13 +43,13 @@ namespace Personalized_Online_Fashion_Shop_Desktop_App
             listView.Columns[0].Width = 0;
 
             int availableWidth = listView.ClientSize.Width;
-            int column1Width = (int)(availableWidth * 0.3); // 30%
-            int column2Width = (int)(availableWidth * 0.7); // 70%
+
+            int column1Width = (int)(availableWidth * 0.3);
+            int column2Width = (int)(availableWidth * 0.7);
 
             listView.Columns[1].Width = column1Width;
             listView.Columns[2].Width = column2Width;
         }
-
 
         private void UC_Dashboard_Resize(object sender, EventArgs e)
         {
@@ -67,7 +60,7 @@ namespace Personalized_Online_Fashion_Shop_Desktop_App
             CenterControlHorizontally(label4);
             CenterControlHorizontally(label5);
             CenterControlHorizontally(label8);
-            ResizeListViewColumns(listView1);
+            ResizeListViewColumns(lv_recent_activities);
         }
     }
 }

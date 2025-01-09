@@ -36,10 +36,11 @@
             this.err_name = new System.Windows.Forms.ErrorProvider(this.components);
             this.err_username = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btn_save_changes = new System.Windows.Forms.Button();
             this.btn_close_2 = new System.Windows.Forms.Button();
+            this.btn_save_changes = new System.Windows.Forms.Button();
             this.loading = new System.Windows.Forms.Panel();
             this.body = new System.Windows.Forms.Panel();
+            this.txt_old_password = new System.Windows.Forms.TextBox();
             this.btn_temp = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_password = new System.Windows.Forms.TextBox();
@@ -50,7 +51,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.txt_old_password = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.err_name)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.err_username)).BeginInit();
@@ -116,22 +116,6 @@
             this.panel3.Size = new System.Drawing.Size(435, 50);
             this.panel3.TabIndex = 2;
             // 
-            // btn_save_changes
-            // 
-            this.btn_save_changes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
-            this.btn_save_changes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_save_changes.FlatAppearance.BorderSize = 0;
-            this.btn_save_changes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_save_changes.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_save_changes.ForeColor = System.Drawing.Color.White;
-            this.btn_save_changes.Location = new System.Drawing.Point(272, 7);
-            this.btn_save_changes.Name = "btn_save_changes";
-            this.btn_save_changes.Size = new System.Drawing.Size(150, 35);
-            this.btn_save_changes.TabIndex = 0;
-            this.btn_save_changes.Text = "&Save changes";
-            this.btn_save_changes.UseVisualStyleBackColor = false;
-            this.btn_save_changes.Click += new System.EventHandler(this.btn_save_changes_Click);
-            // 
             // btn_close_2
             // 
             this.btn_close_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
@@ -147,6 +131,22 @@
             this.btn_close_2.Text = "&Close";
             this.btn_close_2.UseVisualStyleBackColor = false;
             this.btn_close_2.Click += new System.EventHandler(this.btn_close_2_Click);
+            // 
+            // btn_save_changes
+            // 
+            this.btn_save_changes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(110)))), ((int)(((byte)(253)))));
+            this.btn_save_changes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_save_changes.FlatAppearance.BorderSize = 0;
+            this.btn_save_changes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_save_changes.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_save_changes.ForeColor = System.Drawing.Color.White;
+            this.btn_save_changes.Location = new System.Drawing.Point(272, 7);
+            this.btn_save_changes.Name = "btn_save_changes";
+            this.btn_save_changes.Size = new System.Drawing.Size(150, 35);
+            this.btn_save_changes.TabIndex = 0;
+            this.btn_save_changes.Text = "&Save Changes";
+            this.btn_save_changes.UseVisualStyleBackColor = false;
+            this.btn_save_changes.Click += new System.EventHandler(this.btn_save_changes_Click);
             // 
             // loading
             // 
@@ -177,6 +177,13 @@
             this.body.Name = "body";
             this.body.Size = new System.Drawing.Size(433, 214);
             this.body.TabIndex = 3;
+            // 
+            // txt_old_password
+            // 
+            this.txt_old_password.Location = new System.Drawing.Point(452, 191);
+            this.txt_old_password.Name = "txt_old_password";
+            this.txt_old_password.Size = new System.Drawing.Size(100, 20);
+            this.txt_old_password.TabIndex = 9;
             // 
             // btn_temp
             // 
@@ -274,13 +281,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
-            // 
-            // txt_old_password
-            // 
-            this.txt_old_password.Location = new System.Drawing.Point(452, 191);
-            this.txt_old_password.Name = "txt_old_password";
-            this.txt_old_password.Size = new System.Drawing.Size(100, 20);
-            this.txt_old_password.TabIndex = 9;
             // 
             // Account_Settings
             // 

@@ -8,6 +8,8 @@ namespace Personalized_Online_Fashion_Shop_Desktop_App
 {
     internal class Database
     {
+        public bool is_online_database = true;
+
         public void Initialize_Database()
         {
             Database_Connection();
@@ -16,8 +18,7 @@ namespace Personalized_Online_Fashion_Shop_Desktop_App
 
         private string Database_Connection()
         {
-            //string db_server = "prototype.personalizedonlinefashion.shop";
-            string db_server = "localhost";
+            string db_server = is_online_database ? "prototype.personalizedonlinefashion.shop" : "localhost";
             string db_user_id = "db_system_user";
             string db_password = "h$jNg}[%pnNp";
             string db_name = "db_system";
@@ -65,6 +66,11 @@ namespace Personalized_Online_Fashion_Shop_Desktop_App
             };
 
             Insert("users", user_data);
+        }
+
+        public string Generate_UUID()
+        {
+            return Guid.NewGuid().ToString();
         }
 
         public bool Insert(string table_name, Dictionary<string, object> data)
@@ -321,10 +327,12 @@ namespace Personalized_Online_Fashion_Shop_Desktop_App
                         while (reader.Read())
                         {
                             Dictionary<string, object> row = new Dictionary<string, object>();
+                            
                             for (int i = 0; i < reader.FieldCount; i++)
                             {
                                 row.Add(reader.GetName(i), reader.GetValue(i));
                             }
+
                             result.Add(row);
                         }
                     }
